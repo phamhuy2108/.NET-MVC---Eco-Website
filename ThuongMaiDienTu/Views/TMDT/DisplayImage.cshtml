@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body class="animsition">
+    @*<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+        @foreach (var d in ViewBag.Feature)
+        {
+            string divnameproduct = "divnameproduct" + @d.mactgiohang;
+            <script type="text/javascript">
+                $(document).ready(function()
+                {
+                            $.ajax({
+                                type: "GET",
+                                url: "@Url.Action("SuaSinhVien", "QLSV")",
+
+                                success: function (data) {
+                                    $("#@divnameproduct").html(data);
+                                }
+                        });
+                    });
+                });
+            </script>
+        }*@
+
+    <img src="~/UploadFiles/@ViewBag.DisplayImage.hinh" alt="IMG-PRODUCT">
+</body>
+</html>
